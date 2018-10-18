@@ -10,6 +10,7 @@ defmodule AbsintheTestApp.Application do
     children = [
       # Start the endpoint when the application starts
       supervisor(AbsintheTestAppWeb.Endpoint, []),
+      supervisor(Absinthe.Subscription, [AbsintheTestAppWeb.Endpoint])
       # Start your own worker by calling: AbsintheTestApp.Worker.start_link(arg1, arg2, arg3)
       # worker(AbsintheTestApp.Worker, [arg1, arg2, arg3]),
     ]

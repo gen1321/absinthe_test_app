@@ -1,5 +1,6 @@
 defmodule AbsintheTestAppWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :absinthe_test_app
+  use Absinthe.Phoenix.Endpoint
 
   socket "/socket", AbsintheTestAppWeb.UserSocket
 

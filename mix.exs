@@ -34,6 +34,9 @@ defmodule AbsintheTestApp.Mixfile do
     [
       {:phoenix, "~> 1.3.4"},
       {:phoenix_pubsub, "~> 1.0"},
+      {:absinthe_phoenix, "~> 1.4.0"},
+      {:absinthe, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"}
     ]
